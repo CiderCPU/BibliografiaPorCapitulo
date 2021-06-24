@@ -1,0 +1,16 @@
+\providecommand{\main}{..} % makes sure that the directory reference is relative to the subfile
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+    \newrefsection
+    \definecolor{chapcolor}{RGB}{31,242,109} % chapter 1 color
+    \chapter{First Chapter}
+    Hello there. This is a test.
+    \begin{equation}
+        \label{eq:chap1:1}
+        p + q = 2r
+    \end{equation}
+    La expresión anterior es conocida como una \hlt{ecuación}. Para más información, 
+    puedes recurrir a \cite{jech06}.
+    \printbibliography
+\end{document}

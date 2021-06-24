@@ -1,0 +1,23 @@
+\providecommand{\main}{..} % makes sure that the directory reference is relative to the subfile
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+    \newrefsection
+    \definecolor{chapcolor}{RGB}{11,175,230} % chapter 2 color
+    \chapter{Second Chapter}
+    Hello there. This is a test.
+    \begin{equation}
+        \label{eq:chap2:1}
+        n + m = 2q
+    \end{equation}
+    La expresión anterior es conocida como una \hlt{ecuación}. \textquestiondown Ves el número a la
+    derecha de la ecuación? Ese número sirve como etiqueta para hacer referencia a esa expresión. En
+    vez de escribir ``\(n + m = 2q\)'' repetidas veces, podemos simplemente escribir ``la ecuación \ref{eq:chap2:1}''
+    para hacer referencia a esa expresión, sin necesidad de repetirla una y otra vez.
+    
+    Como parte de las funcionalidades de este PDF, las etiquetas en color {\color{octyred}rojo} funcionan 
+    como hipervínculos: hacer click sobre una de estas etiquetas te llevará a la definición, teorema, 
+    expresión, etc. a la que hacen referencia. \textexclamdown Prueba esta funcionalidad visitando la 
+    ecuación \ref{eq:chap1:1}, del capítulo anterior! \cite{aluffi09}
+    \printbibliography
+\end{document}

@@ -1,0 +1,20 @@
+\documentclass[12pt, letterpaper, openany]{book}
+\usepackage{mystyle} % Used packages, environments and other stuff are defined here
+\usepackage{biblatex}
+\usepackage{subfiles}
+
+%\addbibresource{\main/tex/bibliography.bib} % bibliography database
+%\bibliography{chapter1/bib1.bib, chapter2/bib2.bib}
+\addbibresource{\main/chapter1/bib1.bib}
+\addbibresource{\main/chapter2/bib2.bib}
+
+\begin{document}
+    % help me god
+    {
+        \hypersetup{hidelinks}
+        \tableofcontents
+    }
+    \subfile{chapter1/chapter1}
+    \subfile{chapter2/chapter2}
+%\printbibliography
+\end{document}

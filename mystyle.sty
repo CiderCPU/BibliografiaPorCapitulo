@@ -1,0 +1,34 @@
+\ProvidesPackage{mystyle}
+%%% Language setup %%% 
+\usepackage[spanish]{babel}
+
+%%% Colouring (dark theme) %%%
+\usepackage{xcolor-material}
+%\definecolor{textcolor}{RGB}{224,219,204} % Default text color
+%\definecolor{pagecolor}{RGB}{20,10,6} % Default page (background) color
+\definecolor{octyred}{RGB}{247, 42, 42} % Global link color
+%\pagecolor{pagecolor}
+%\color{textcolor}
+
+%%% Fonts and Math Font setup %%%
+%\usepackage{fontspec}
+%\usepackage{Baskervaldx} % tosf in text, tlf in math
+%\usepackage{mathptmx} % math italic letters from Times
+%\usepackage[cal=boondoxo]{mathalfa} % mathcal from STIX, unslanted a bit
+%\newfontfamily\Heros[Scale=0.84, Ligatures=TeX]{TeX Gyre Heros} % scale=0.84 cause its too big
+
+%%% Chapter Color Highlighting %%%
+\newcommand{\hlt}[1]{{\bfseries\color{chapcolor}#1}} % hlt for 'highlight'
+
+%%% Bibliography with Biber %%%
+\usepackage{csquotes}
+\usepackage{biblatex}
+\providecommand{\main}{.}
+
+%%% Hyperlink Reference Utility %%%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = octyred,
+    citecolor = octyred,
+}
